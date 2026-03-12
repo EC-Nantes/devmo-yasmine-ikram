@@ -25,3 +25,8 @@ startActivity(intent)
 ```kotlin
 btnRetour.setOnClickListener { finish() }
 ```
+Cet interface  affiche la liste des chapitres avec leur progression et un sous-menu dépliable (Playlist, Commentaires). 
+<img width="368" height="816" alt="2_" src="https://github.com/user-attachments/assets/73b1171f-df93-464a-9445-2e88d5eab66b" />
+Cet interface affiche les discussions contextuelles du chapitre sélectionné, avec les commentaires des utilisateurs et un champ pour en ajouter un nouveau.
+<img width="371" height="803" alt="1_" src="https://github.com/user-attachments/assets/fe24a699-3c20-48f5-8ea5-ab790a0b8272" />
+
