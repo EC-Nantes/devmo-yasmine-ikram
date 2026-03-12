@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/activity_discussions.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Header : ← + titre -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/btnRetour"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="Retour" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Discussions contextuelles"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <!-- Titre du chapitre -->
+    <TextView
+        android:id="@+id/tvTitreChapitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titre du Livre - chapitre 1"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="12dp" />
+
+    <!-- Progression -->
+    <TextView
+        android:id="@+id/tvProgression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3%"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="8dp" />
+
+    <!-- Liste des commentaires -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCommentaires"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Séparateur -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+
+    <!-- Zone saisie commentaire -->
+    <EditText
+        android:id="@+id/etNouveauCommentaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Qu'est-ce que vous pensez de ce chapitre ?"
+        android:textSize="14sp"
+        android:textColorHint="#AAAAAA"
+        android:padding="16dp"
+        android:background="@null"
+        android:minLines="2" />
+
+    <!-- Séparateur -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0" />
+
+    <!-- Bouton ajouter -->
+    <Button
+        android:id="@+id/btnAjouterCommentaire"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="ajouter un commentaire"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:background="#2196F3"
+        android:layout_margin="12dp" />
+
+    <!-- Barre de navigation bas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@android:drawable/ic_menu_agenda"
+                android:contentDescription="Progression" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progression"
+                android:textSize="10sp"
+                android:textColor="#555555" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@android:drawable/ic_menu_agenda"
+                android:contentDescription="Ma biblio" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ma biblio"
+                android:textSize="10sp"
+                android:textColor="#555555" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:contentDescription="Recherche" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recherche"
+                android:textSize="10sp"
+                android:textColor="#555555" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:contentDescription="Mon compte" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mon compte"
+                android:textSize="10sp"
+                android:textColor="#555555" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

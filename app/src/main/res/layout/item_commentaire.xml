@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/item_commentaire.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    android:paddingTop="12dp"
+    android:background="#FFFFFF">
+
+    <!-- Ligne avatar + nom + temps -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Avatar rond -->
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:background="@android:drawable/dialog_frame"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="Avatar" />
+
+        <!-- Nom -->
+        <TextView
+            android:id="@+id/tvAuteur"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yasmine"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <!-- Temps -->
+        <TextView
+            android:id="@+id/tvTemps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="il y a 2 heures"
+            android:textSize="11sp"
+            android:textColor="#999999" />
+    </LinearLayout>
+
+    <!-- Texte commentaire -->
+    <TextView
+        android:id="@+id/tvTexteCommentaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="J'ai trouvé le premier chapitre vraiment captivant."
+        android:textSize="13sp"
+        android:textColor="#333333"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="48dp"
+        android:lineSpacingExtra="2dp" />
+
+    <!-- Ligne réponses + likes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp">
+
+        <!-- Réponses -->
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@android:drawable/sym_action_chat"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="Réponses" />
+
+        <TextView
+            android:id="@+id/tvNbReponses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Likes -->
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@android:drawable/btn_star_big_off"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="Like" />
+
+        <TextView
+            android:id="@+id/tvNbLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="35"
+            android:textSize="12sp"
+            android:textColor="#666666" />
+    </LinearLayout>
+
+    <!-- Séparateur -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEEEEE" />
+
+</LinearLayout>
