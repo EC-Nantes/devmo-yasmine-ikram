@@ -1,6 +1,4 @@
 // ============================================================
-// FICHIER : DiscussionsActivity.kt
-// À placer dans : com/example/livre/ui/
 // Interface 1 : Discussions contextuelles
 // ============================================================
 
