@@ -1,6 +1,4 @@
 // ============================================================
-// FICHIER : DataClasses.kt
-// À placer dans : com/example/livre/model/
 // ============================================================
 
 package com.example.livre.model
