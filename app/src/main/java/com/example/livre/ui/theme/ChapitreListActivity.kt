@@ -1,6 +1,4 @@
 // ============================================================
-// FICHIER : ChapitreListActivity.kt
-// À placer dans : com/example/livre/ui/
 // Interface 2 : Liste des chapitres
 // ============================================================
 
